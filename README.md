@@ -20,6 +20,5 @@
 
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=madhav-wakhare&show_icons=true&locale=en&layout=compact" alt="madhav-wakhare" /></p>
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=madhav-wakhare&show_icons=true&locale=en" alt="madhav-wakhare" /></p>
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=madhav-wakhare&" alt="madhav-wakhare" /></p>
