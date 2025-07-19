@@ -1,9 +1,5 @@
 <h1 align="center">Hi I'm Madhav Wakhare</h1>
-<h3 align="center">A passionate DevOps Engineer with 1.5 years of experience and I believe in doing things while learning them.</h3>
-
-- 🌱 I’m currently learning **GO-LANG**
-
-- 🤝 I’m looking for help with **DevOps**
+<h3 align="center">A passionate DevOps Engineer with 1.5 years of experience and I believe in solving hard problems.</h3>
 
 - 💬 Ask me about **DevOps**
 
