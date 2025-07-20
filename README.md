@@ -4,7 +4,7 @@
 ---
 
 <h1 align="center">Hi there, I'm Madhav Wakhare 👋</h1>
-<p align="center">🚀 DevOps Engineer | ☁️ AWS Practitioner | ⚙️ CI/CD Automator | 🐳 Containerization Enthusiast</p>
+<p align="center">🚀 DevOps & SRE Engineer | ☁️ AWS Practitioner | ⚙️ CI/CD Automator | 🐳 Containerization Enthusiast</p>
 
 ---
 
