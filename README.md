@@ -10,7 +10,7 @@
 
 ## About Me
 
-* 💼 Currently working at **Dynamisch IT** as a DevOps Engineer
+* 💼 Currently working at **One2N** as a DevOps Engineer
 * 🛠️ Skilled in designing **CI/CD pipelines**, **cloud automation**, and **monitoring solutions**
 * 🐍 Write automation scripts using **Python** and **Bash**
 * ☁️ Manage scalable infrastructure using **Terraform**, **Kubernetes**, **AWS**
