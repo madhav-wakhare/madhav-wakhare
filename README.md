@@ -1,123 +1,71 @@
-<p align="center"><i>“Be curious. Read widely. Try new things. What people call intelligence just boils down to curiosity.”</i></p>
-<p align="center"><i>- Aaron Swartz (2013 ~ 1986) -</i></p>
+# Madhav Wakhare
 
----
+**AI-enabled Site Reliability Engineer at [One2N](https://one2n.io), working toward inference engineering.**
 
-<h1 align="center">Hi there, I'm Madhav Wakhare 👋</h1>
-<p align="center">🚀 DevOps & SRE Engineer | ☁️ AWS Practitioner | ⚙️ CI/CD Automator | 🐳 Containerization Enthusiast</p>
+I build and run the infrastructure that software depends on: CI/CD pipelines, cloud infrastructure as code, and the monitoring that tells you when something is wrong. I use AI tools every day to cut toil in that work. Now I am learning how to serve large language models reliably, from GPU memory up to the inference server, because model serving is becoming one more production system that an SRE must understand and run.
 
----
+> "Be curious. Read widely. Try new things. What people call intelligence just boils down to curiosity."
+> — Aaron Swartz (1986–2013)
 
-## About Me
+## How I work
 
-* 💼 Currently working at **One2N** as a DevOps Engineer
-* 🛠️ Skilled in designing **CI/CD pipelines**, **cloud automation**, and **monitoring solutions**
-* 🐍 Write automation scripts using **Python** and **Bash**
-* ☁️ Manage scalable infrastructure using **Terraform**, **Kubernetes**, **AWS**
-* 🧠 Curious about **Prompt Engineering**, **LLMs**, and **cloud cost optimization**
+- **Solve the actual problem.** Start with the simplest design that works, and add complexity only when the system needs it.
+- **Own it end to end.** If I build a pipeline or a module, I also document it, monitor it, and fix it when it breaks.
+- **Automate the repeatable.** Manual steps that run more than twice become a script, a pipeline, or a Terraform module.
+- **Learn in the open.** I read engineering blogs, try new tools on side projects, and write about what I find.
 
----
+## Featured project
 
-## 🛠️ Favorite Tech Stack
+### [Smriti](https://github.com/madhav-wakhare/smriti)
 
-> Tools and platforms I work with most often:
+A local-first work and learning tracker. It runs as a single Docker container and keeps all data in one SQLite file, so nothing leaves your machine.
 
-<table>
-  <tr>
-    <td align="center" width="96">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" width="48" height="48" alt="AWS" />
-      <br>AWS
-    </td>
-    <td align="center" width="96">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="48" height="48" alt="Linux" />
-      <br>Linux
-    </td>
-    <td align="center" width="96">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="48" height="48" alt="Docker" />
-      <br>Docker
-    </td>
-    <td align="center" width="96">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" width="48" height="48" alt="Kubernetes" />
-      <br>Kubernetes
-    </td>
-    <td align="center" width="96">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" width="48" height="48" alt="Terraform" />
-      <br>Terraform
-    </td>
-    <td align="center" width="96">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg" width="48" height="48" alt="Ansible" />
-      <br>Ansible
-    </td>
-    <td align="center" width="96">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" width="48" height="48" alt="Jenkins" />
-      <br>Jenkins
-    </td>
-    <td align="center" width="96">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="48" height="48" alt="Python" />
-      <br>Python
-    </td>
-    <td align="center" width="96">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" width="48" height="48" alt="Bash" />
-      <br>Bash
-    </td>
-    <td align="center" width="96">
-      <img src="https://www.google.com/imgres?q=Rundeck%20logo%20image%20svg&imgurl=https%3A%2F%2Fwww.rundeck.com%2Fhubfs%2FAssets%2Fwebsite%2Frundeck-by-pagerduty.svg&imgrefurl=https%3A%2F%2Fwww.rundeck.com%2Fsecurity-and-compliance&docid=LorG9jkb4w8zaM&tbnid=NWRS8SwxL0hl7M&vet=12ahUKEwiN9qC5vcuOAxVxoa8BHalUDuQQM3oECBQQAA..i&w=337&h=96&hcb=2&ved=2ahUKEwiN9qC5vcuOAxVxoa8BHalUDuQQM3oECBQQAA" width="148" height="148" alt="Rundeck" />
-      <br>Rundeck
-    </td>
-  </tr>
-</table>
+- Kanban board with ageing indicators for items that wait too long
+- Jira-style work logs and time tracking per task
+- Learning topics and an engineering-blog reading list with notes
+- Weekly report of time spent per day and per project
 
----
+I built it to plan my own day and keep what I learn in front of me. It is the tool I use every working day.
 
-##  Professional Work
+## Selected work
 
-### 🔧 End-to-End CI/CD Pipeline Implementation
+**CI/CD pipeline for application delivery**
+Built an automated pipeline with Jenkins, Docker, GitLab, and Nginx. GitLab webhooks and branch protection enforce code-quality checks before merge. CloudWatch and SNS report build and deploy status. Deployment time dropped by 70%.
 
-* Built automated CI/CD pipeline using Jenkins, Docker, GitLab, and Nginx
-* Reduced deployment time by **70%**, integrated with CloudWatch and SNS
-* Enforced code quality with GitLab webhooks and branch protections
+**Infrastructure as code with Terraform**
+Wrote modular, reusable Terraform for AWS infrastructure, with workspaces for separate environments. HashiCorp Vault supplies credentials at apply time, so no secrets live in code. This removed most manual provisioning steps and the errors that came with them.
 
-### 🔧 Infrastructure Automation using Terraform
+**Datadog agent rollout across 100+ Linux servers**
+Automated agent installation and configuration with Ansible and Jinja2 templates, run through Rundeck. Keeper Secrets Manager injects API keys at runtime. Monitoring is set per environment for EC2 hosts and MySQL on RDS.
 
-* Created **modular, reusable Terraform code** to manage AWS infrastructure
-* Cut deployment time and manual errors, enabled multi-env support using workspaces
-* Integrated **HashiCorp Vault** for secure credential management
 
-### 🔧 Datadog Agent Template via Rundeck & KSM
+## Tools I use
 
-* Automated **Datadog Agent deployment** on 100+ Linux servers using Jinja2 and Ansible
-* Dynamically injected credentials using **Keeper Secrets Manager**
-* Enabled environment-based monitoring for EC2 hosts and MySQL RDS
+| Area | Tools |
+| --- | --- |
+| Cloud | AWS |
+| Infrastructure as code | Terraform, Ansible |
+| Containers and orchestration | Docker, Kubernetes |
+| CI/CD and automation | Jenkins, GitLab CI, Rundeck |
+| Observability | Datadog, CloudWatch |
+| Secrets | HashiCorp Vault, Keeper Secrets Manager |
+| Languages | Python, Bash |
+| Operating systems | Linux |
 
----
+## Currently exploring: inference engineering
 
-## 📌 Top Repositories
+Training a model happens once. Serving it happens on every request, and that is where latency, cost and reliability are decided. I am studying the full path from hardware to inference server, starting from first principles:
 
-| Repository                                                                                   | Description                                                            |
-| -------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| [`Employee_Management_Portal`](https://github.com/madhav-wakhare/Employee_Management_Portal) | Containerized app with Golang, React, CI/CD, and Docker Compose        |
-| [`End-to-End-CI-CD`](https://github.com/madhav-wakhare/End-to-End-CI-CD)                     | Fully automated CI/CD pipeline with Jenkins, Docker, GitLab, and Nginx |
-| [`AI-OPS`](https://github.com/madhav-wakhare/AI-OPS)                                         | LLM-driven automation and prompt engineering for DevOps workflows      |
+- **Hardware and memory.** Why GPUs need VRAM, and why memory bandwidth, not compute, usually limits token generation. How the PCIe link between system RAM and the GPU becomes the bottleneck, and how unified memory changes that trade-off.
+- **Model weights.** How parameters, weights and size on disk relate. How to estimate the VRAM a model needs for its weights, its activations and its KV cache.
+- **Models larger than the GPU.** How PyTorch and CUDA load weights to the GPU, and what happens when a 70B-parameter model does not fit in VRAM: CPU offloading, multi-GPU sharding, and their cost in speed.
+- **Quantization.** Trading numeric precision for memory, and what it does to model quality.
+- **The serving path.** Prefill and decode, prefix caching, and how engines such as vLLM use GPU memory to serve many requests at once.
 
----
+My next step is to apply this the SRE way: serve open models with vLLM, measure latency and throughput, and define the SLOs and dashboards an inference service needs in production.
 
-### 📢 Find me elsewhere
+I also use LLMs in daily operations work and keep an eye on cloud cost optimization.
 
-<p align="left">
-  <a href="mailto:wakharemadhav@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white" alt="Email" />
-  </a>&nbsp;&nbsp;
+## Contact
 
-  <a href="https://www.linkedin.com/in/madhavwakhare-devopsengineer/">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>&nbsp;&nbsp;
-
-  <a href="https://hashnode.com/@madhav-wakhare">
-    <img src="https://img.shields.io/badge/Hashnode-2962FF?style=flat&logo=hashnode&logoColor=white" alt="Hashnode" />
-  </a>
-</p>
-
-<details>
-<summary>More Visuals & Widgets</summary>
-
-</details>
+[Email](mailto:wakharemadhav@gmail.com) · [LinkedIn](https://www.linkedin.com/in/madhavwakhare-devopsengineer/) · [Hashnode](https://hashnode.com/@madhav-wakhare)
