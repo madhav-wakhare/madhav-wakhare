@@ -9,10 +9,13 @@ I build and run the infrastructure that software depends on: CI/CD pipelines, cl
 
 ## How I work
 
-- **Solve the actual problem.** Start with the simplest design that works, and add complexity only when the system needs it.
-- **Own it end to end.** If I build a pipeline or a module, I also document it, monitor it, and fix it when it breaks.
-- **Automate the repeatable.** Manual steps that run more than twice become a script, a pipeline, or a Terraform module.
-- **Learn in the open.** I read engineering blogs, try new tools on side projects, and write about what I find.
+A few habits I try to follow. Most of them I picked up from my teammates at One2N, and some from my own mistakes.
+
+- **Keep it simple first.** I try the plain solution before a new tool, and add more only when there is a real need.
+- **Finish what I pick up.** That means the docs and alerts too, not only the code. When I am stuck, I ask early instead of guessing.
+- **Script what I repeat.** If I do the same manual step a few times, I write a script for it.
+- **Keep learning.** I read engineering blogs, try things in side projects, and take notes as I go. Sometimes they turn into a post on X.
+
 
 ## Featured project
 
