@@ -71,4 +71,4 @@ I also use LLMs in daily operations work and keep an eye on cloud cost optimizat
 
 ## Contact
 
-[Email](mailto:wakharemadhav@gmail.com) · [LinkedIn](https://www.linkedin.com/in/madhavwakhare-devopsengineer/) · [Hashnode](https://hashnode.com/@madhav-wakhare)
+[Email](mailto:wakharemadhav@gmail.com) · [LinkedIn](https://www.linkedin.com/in/madhavwakhare-devopsengineer/) 
